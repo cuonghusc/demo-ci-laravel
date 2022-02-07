@@ -49,7 +49,7 @@ jobs:
           key: node-v1-{{ checksum "package.json" }}
           paths:
             - node_modules
-    - run:
+      - run:
           name: "Create Environment file and generate app key"
           command: |
             mv .env.testing .env
